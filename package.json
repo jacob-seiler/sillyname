@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "silly_name",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -7,11 +7,17 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "style": "prettier --check . --plugin=prettier-plugin-astro",
+    "style:fix": "prettier --write . --plugin=prettier-plugin-astro"
   },
   "dependencies": {
     "@astrojs/tailwind": "^5.0.0",
     "astro": "^3.2.0",
     "tailwindcss": "^3.0.24"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.3",
+    "prettier-plugin-astro": "^0.12.0"
   }
 }
